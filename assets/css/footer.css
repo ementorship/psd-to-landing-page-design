@@ -27,25 +27,24 @@ footer.footer {
     font-family: var(--theme-font-family);
     text-transform: capitalize;
 }
-
-input.newsletter__email {
-    width: 100%;
-    height: 70px;
-    background-color: var( --theme-primary-dark);
-    border: none;
-    padding: 13px 132px 12px 12px;
-    outline: none;
-    box-shadow: none;
-}
-.newsletter__block {
+.newsletter__form-group {
     position: relative;
     width: 100%;
     margin: 0 0 2rem;
 }
+input.newsletter__input {
+    width: calc(100% - 110px);
+    height: 70px;
+    border: none;
+    background-color: var(--theme-primary-dark);
+    box-shadow: none;
+    padding: 12px 16px;
+    width: 100%;
+}
 button.newsletter__button {
     position: absolute;
     right: 0;
-    width: 120px;
+    width: 110px;
     height: 70px;
     background-color: var( --theme-secondary);
     padding: 0;
@@ -55,39 +54,45 @@ button.newsletter__button {
     top: 0;
     border: none;
 }
-.newsletter__button img {
+button.newsletter__button img {
     width: 30px;
 }
-.footer__logo-block p {
+.newsletter__header p {
     width: 100%;
-    text-align: right;
     color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
 }
-.footer__logo-block h2 {
+.newsletter__header h2 {
     color: #fff;
     width: 100%;
-    text-align: right;
     font-size: 2.3rem;
     font-weight: 600;
 }
-.footer__logo-block {
+.newsletter__header {
     width: 100%;
     margin-bottom: 2.5rem;
+    text-align: right;
 }
-ul.social__media__list {
+.social-media__list li a {
+    display: block;
+}
+.social-media__list li a img {
+    width: 40px;
+}
+.social-media__list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul.social-media__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+}
+.social-media__block {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    flex-wrap: wrap;
-}
-.social__media__list li {
-    margin-left: 1.5rem;
-    display: inline-block;
-}
-.social__media__list li a {
-    display: block;
-    width: 45px;
-    height: 45px;
 }
